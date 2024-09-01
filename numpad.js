@@ -6,4 +6,4 @@ document.addEventListener('click', () => {
 
 const output = document.querySelector(#output-text)
 
-output.textContent = "yeah";
+output.innerText = "yeah!";
