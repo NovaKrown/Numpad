@@ -8,3 +8,7 @@ body{
     font-weight: 600;
     font-size: x-large;
 }
+
+#output-text{
+    color:lime
+}
