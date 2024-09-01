@@ -8,5 +8,7 @@ body{
 }
 
 #output-text{
+    margin: 50px;
+    text-align: center;
     color:lime
 }
