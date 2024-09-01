@@ -4,6 +4,6 @@ document.addEventListener('click', () => {
     console.log("click");
 })
 
-const output = document.querySelector(#output-text)
+const output = document.querySelector("#output-text")
 
 output.innerText = "yeah!";
