@@ -8,16 +8,19 @@ const pointerLocation = {
   y: 0,
 };
 
-let width = window.innerWidth / 100;
-let height = window.innerHeight / 100;
-let boxDimensions = width < height ? width : height;
+let width = window.innerWidth;
+let height = window.innerHeight;
+let boxDimensions = width < height ? width / 15 : height / 15;
+let centeredBox = boxDimensions / 2;
 
-box.style.width = `${boxDimensions * 10}px`;
-box.style.height = `${boxDimensions * 10}px`;
+box.style.width = `${boxDimensions}px`;
+box.style.height = `${boxDimensions}px`;
 
-document.addEventListener("pointerdown", () => {
+document.addEventListener("pointerdown", (event) => {
   console.log("click");
   pointerEvent = true;
+  pointerLocation.x = event.clientX;
+  pointerLocation.y = event.clientY;
 });
 
 document.addEventListener("pointermove", (event) => {
@@ -32,12 +35,12 @@ document.addEventListener("pointerup", () => {
 output.innerText = "ready!";
 
 const loop = () => {
-  // console.log("loooop");
+  // console.log(boxDimensions / 2);
   if (pointerEvent) {
     output.innerText = `x: ${pointerLocation.x}, y: ${pointerLocation.y}`;
     box.style.backgroundColor = "cornflowerblue";
-    box.style.top = `${pointerLocation.y}px`;
-    box.style.left = `${pointerLocation.x}px`;
+    box.style.top = `${pointerLocation.y - centeredBox}px`;
+    box.style.left = `${pointerLocation.x - centeredBox}px`;
   }
   requestAnimationFrame(loop);
 };
