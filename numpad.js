@@ -8,7 +8,7 @@ const box = document.querySelector(".box");
 document.addEventListener("pointerdown", (event) => {
   console.log("click");
   output.innerText = `${event.clientX}, ${event.clientY}`;
-  box.style = `top: ${event.clientY}`
+  box.style.top = `${event.clientY}`
 });
 
 document.addEventListener("pointerup", () => {
