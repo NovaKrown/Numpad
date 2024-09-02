@@ -7,7 +7,7 @@ const box = document.querySelector(".box");
 
 document.addEventListener("pointerdown", (event) => {
   console.log("click");
-  output.innerText = event.clientX;
+  output.innerText = event.clientX, event.clientY;
 });
 
 document.addEventListener("pointerup", () => {
