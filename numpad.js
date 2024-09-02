@@ -11,4 +11,4 @@ document.addEventListener("pointerup", () => {
   output.innerText = "boop";
 });
 
-output.innerText = "yeah!";
+output.innerText = "ready!";
