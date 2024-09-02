@@ -5,9 +5,9 @@ const output = document.querySelector("#output-text");
 const box = document.querySelector(".box");
 
 
-document.addEventListener("pointerdown", () => {
+document.addEventListener("pointerdown", (event) => {
   console.log("click");
-  output.innerText = "click";
+  output.innerText = event.x;
 });
 
 document.addEventListener("pointerup", () => {
@@ -15,3 +15,5 @@ document.addEventListener("pointerup", () => {
 });
 
 output.innerText = "ready!";
+
+box.style
