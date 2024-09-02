@@ -1,23 +1,39 @@
 * {
-    padding: 0;margin: 0;box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: white;
-    color:cornflowerblue;
+body {
+  background-color: beige;
+  user-select: none;
+  overflow: hidden;
 }
 
-#output-text{
-    margin: 50px;
-    text-align: center;
-    color:lime
+h1 {
+  color: midnightblue;
 }
 
-.box{
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    background-color: crimson;
-    height: 50px;
-    width: 50px;
+.centered {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+#output-text {
+  top: 40vh;
+  color: forestgreen;
+}
+
+.box {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: crimson;
+  height: 10vh;
+  width: 10vw;
+  z-index: 0;
 }
