@@ -12,7 +12,7 @@ document.addEventListener("pointerdown", (event) => {
 });
 
 document.addEventListener("pointerup", () => {
-  output.innerText = "boop";
+  output.innerText = "boo";
 });
 
 output.innerText = "ready!";
